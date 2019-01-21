@@ -1,0 +1,31 @@
+
+$screen-size-mobile: 426px !default;
+$screen-size-lap: 840px !default;
+$screen-size-desktop: 1200px !default;
+$screen-size-wide: 1900px !default;
+
+
+$font-size-primary: 1.6 !default;
+$font-size-micro: 1.2 !default;
+
+
+$font-bold: 700 !default;
+$font-thin: 300 !default;
+$font-normal: 400 !default;
+
+
+$colour-white-text: #FFF !default;
+$colour-white-secondary-text: rgba(255, 255, 255, 0.7) !default;
+$colour-green-primary: #0F9D58 !default;
+
+
+$spacing-primary: 8px !default; // 8
+$spacing-secondary: ($spacing-primary * 2) !default; // 16
+$spacing-tertiary: ($spacing-secondary * 2) !default; // 32
+$spacing-quaternary: ($spacing-primary / 2) !default; // 4
+$spacing-quinary: ($spacing-quaternary / 2) !default; // 2
+$spacing-senary: 50px !default;
+$spacing-septenary: 20px !default;
+$spacing-octonary: 11px !default;
+$spacing-nonary: 40px !default;
+// $spacing-denary:

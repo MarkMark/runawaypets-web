@@ -1,0 +1,61 @@
+@import "../../../styles.scss";
+
+
+footer {
+  @include font-size($font-size-primary);
+  background: $colour-green-primary;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
+
+  ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    width: calc(100% - 118px);
+
+    @include media(lap, min) {
+      width: calc(100% - 300px);
+    }
+
+    li {
+      display: inline-block;
+
+      &:last-child {
+        a { padding-right: 0; }
+      }
+    }
+  }
+
+
+  .copy {
+    @include font-size($font-size-micro);
+    color: $colour-white-secondary-text;
+    display: inline-block;
+    font-weight: $font-thin;
+    padding-right: $spacing-primary;
+    text-align: right;
+    vertical-align: middle;
+
+    @include media(lap, min) {
+      width: 300px;
+    }
+  }
+
+  a {
+    color: $colour-white-secondary-text;
+    display: block;
+    font-weight: $font-thin;
+    padding: $spacing-primary;
+    text-decoration: none;
+    transition: color .5s ease-in-out;
+
+    @include media(lap, min) {
+      padding: $spacing-primary $spacing-secondary;
+    }
+
+    &:hover { color: $colour-white-text; }
+  }
+
+}
