@@ -1,0 +1,321 @@
+
+@for $i from 1 through $columns {
+
+  // Generic columns for every viewport
+  .column--#{$i} {
+    display: inline-block;
+    padding: $spacing-secondary;
+    vertical-align: top;
+    width: 100% / $columns * $i;
+  }
+
+  // Mobile only columns
+  .column--cell--#{$i} {
+    @include media(mobile, max) {
+      width: 100% / $columns * $i;
+    }
+  }
+
+  // Tablet and under columns
+  .column--palm--#{$i} {
+    @include media(handhelds) {
+      width: 100% / $columns * $i;
+    }
+  }
+
+  // laptops and under columns
+  .column--lap--#{$i} {
+    @include media(lap) {
+      width: 100% / $columns * $i;
+    }
+  }
+
+  // desktop and under columns
+  .column--desktop--#{$i} {
+    @include media(desktop) {
+      width: 100% / $columns * $i;
+    }
+  }
+
+  // large screens and over columns
+  .column--wide--#{$i} {
+    @include media(wide) {
+      width: 100% / $columns * $i;
+    }
+  }
+
+}
+
+
+
+
+// Generic push + pull columns for every viewport
+.column--push {
+  .no-flexbox & {
+    float: right;
+  }
+
+  .flexbox & {
+    order: 2;
+  }
+
+}
+
+.column--pull {
+  .no-flexbox & {
+    float: left;
+  }
+
+  .flexbox & {
+    order: 1;
+  }
+
+}
+
+
+// Mobile and under columns
+.column--palm--pull {
+  @include media(handhelds) {
+    .no-flexbox & {
+      float: left;
+    }
+
+    .flexbox & {
+      order: 1;
+    }
+
+  }
+}
+
+.column--palm--push {
+  @include media(handhelds) {
+    .no-flexbox & {
+      float: right;
+    }
+
+    .flexbox & {
+      order: 2;
+    }
+
+  }
+}
+
+// laptops and under columns
+.column--lap--pull {
+  @include media(lap, min) {
+
+    .no-flexbox & {
+      float: left;
+    }
+
+    .flexbox & {
+      order: 1;
+    }
+
+  }
+}
+
+.column--lap--push {
+  @include media(lap, min) {
+
+    .no-flexbox & {
+      float: right;
+    }
+
+    .flexbox & {
+      order: 2;
+    }
+
+  }
+}
+
+// desktop and under columns
+.column--desktop--pull {
+  @include media(desktop, min) {
+
+    .no-flexbox & {
+      float: left;
+    }
+
+    .flexbox & {
+      order: 1;
+    }
+
+  }
+}
+
+.column--desktop--push {
+  @include media(desktop, min) {
+
+    .no-flexbox & {
+      float: right;
+    }
+
+    .flexbox & {
+      order: 2;
+    }
+
+  }
+}
+
+// large screens and over columns
+.column--wide--pull {
+  @include media(wide, min) {
+
+    .no-flexbox & {
+      float: left;
+    }
+
+    .flexbox & {
+      order: 1;
+    }
+
+  }
+}
+
+.column--wide--push {
+  @include media(wide, min) {
+
+    .no-flexbox & {
+      float: right;
+    }
+
+    .flexbox & {
+      order: 2;
+    }
+
+  }
+}
+
+
+
+
+.column {
+
+  &--thick {
+    padding: $spacing-tertiary;
+  }
+
+  &--dense {
+    padding: $spacing-primary;
+  }
+
+}
+
+
+
+// -------------------------------------------------------------------------- //
+
+
+// Look into setting multiple values for set size and a fallback
+// http://stackoverflow.com/questions/26059415/how-to-use-multiple-values-in-sass-maps-with-an-each-function-inside-a-mixin
+$column--set-sizes: (
+  '--60': 60px,
+  '--80': 80px,
+  '--120': 120px,
+  '--150': 150px
+);
+
+
+@each $column-size-name, $column-size-val in $column--set-sizes {
+  .column#{$column-size-name} {
+    display: inline-block;
+    vertical-align: middle;
+    width: $column-size-val;
+
+    &.on-edit--show { display: inline-block; }
+  }
+
+  .column--cal#{$column-size-name} {
+    // @include calc(width, '100% - #{$column-size-val}', 80%);
+    display: inline-block;
+    vertical-align: middle;
+
+    &.on-edit--show { display: inline-block; }
+  }
+
+
+  .column--palm#{$column-size-name} {
+    @include media(handhelds) {
+      display: inline-block;
+      vertical-align: middle;
+      width: $column-size-val;
+    }
+
+    &.on-edit--show { display: inline-block; }
+  }
+
+  .column--palm--cal#{$column-size-name} {
+    @include media(handhelds, max) {
+      // @include calc(width, '100% - #{$column-size-val}', 80%);
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    &.on-edit--show { display: inline-block; }
+  }
+
+  .column--lap#{$column-size-name} {
+    @include media(lap) {
+      display: inline-block;
+      vertical-align: middle;
+      width: $column-size-val;
+    }
+
+    &.on-edit--show { display: inline-block; }
+  }
+
+  .column--lap--cal#{$column-size-name} {
+    @include media(lap) {
+      // @include calc(width, '100% - #{$column-size-val}', 80%);
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    &.on-edit--show { display: inline-block; }
+  }
+
+  .column--desktop#{$column-size-name} {
+    @include media(desktop) {
+      display: inline-block;
+      vertical-align: middle;
+      width: $column-size-val;
+    }
+
+    &.on-edit--show { display: inline-block; }
+  }
+
+  .column--desktop--cal#{$column-size-name} {
+    @include media(desktop) {
+      // @include calc(width, '100% - #{$column-size-val}', 80%);
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    &.on-edit--show { display: inline-block; }
+  }
+
+  .column--wide#{$column-size-name} {
+    @include media(wide) {
+      display: inline-block;
+      vertical-align: middle;
+      width: $column-size-val;
+    }
+
+    &.on-edit--show { display: inline-block; }
+  }
+
+  .column--wide--cal#{$column-size-name} {
+    @include media(wide) {
+      // @include calc(width, '100% - #{$column-size-val}', 80%);
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    &.on-edit--show { display: inline-block; }
+  }
+
+
+
+
+}

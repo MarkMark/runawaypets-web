@@ -1,0 +1,15 @@
+
+
+.label {
+
+  &--canvas {
+    background: $colour-grey-200;
+    border-bottom: 1px solid $colour-black-dividers;
+    display: block;
+    position: relative;
+    text-align: center;
+
+    &__canvas { display: block; }
+  }
+
+}

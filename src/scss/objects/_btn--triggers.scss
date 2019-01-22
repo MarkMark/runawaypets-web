@@ -1,0 +1,20 @@
+
+.btn--trigger {
+  @include font-size($font-size-icon);
+  color: $colour-black-icons;
+  display: inline-block;
+  padding: $spacing-secondary;
+  text-decoration: none;
+
+  & + & { margin-left: $spacing-quinary; }
+
+  &--lrg {
+    @include font-size($font-size-icon-secondary);
+  }
+
+  &--c {
+    &--white { color: $colour-white-icons; }
+  }
+
+
+}

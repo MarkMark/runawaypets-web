@@ -1,0 +1,11 @@
+
+%clearfix,
+.clearfix,
+.group,
+.cf {
+  &:after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}

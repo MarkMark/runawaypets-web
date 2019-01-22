@@ -1,1 +1,45 @@
-/* You can add global styles to this file, and also import other style files */
+
+@import './scss/global.settings';
+@import './scss/tools/tools.font';
+@import './scss/tools/tools.media';
+
+
+@import './scss/generic/box-sizing';
+@import './scss/generic/unselectable';
+@import './scss/generic/reset';
+@import './scss/generic/shared';
+@import './scss/generic/type';
+@import './scss/generic/clearfix';
+
+
+@import './scss/base/page';
+@import './scss/base/headings';
+@import './scss/base/imgs';
+@import './scss/base/paragraphs';
+@import './scss/base/type';
+@import './scss/base/lists';
+@import './scss/base/forms';
+@import './scss/base/tables';
+@import './scss/base/columns';
+@import './scss/base/rows';
+
+
+@import './scss/objects/icons';
+@import './scss/objects/bottom-banner';
+@import './scss/objects/btn';
+@import './scss/objects/btn--triggers';
+@import './scss/objects/btn--floating-action';
+@import './scss/objects/inputs';
+@import './scss/objects/label';
+@import './scss/objects/dividers';
+@import './scss/objects/mask';
+@import './scss/objects/snackbar';
+@import './scss/objects/google-map';
+
+
+@import './scss/trump/alignment';
+@import './scss/trump/colours';
+@import './scss/trump/position';
+@import './scss/trump/spacing';
+@import './scss/trump/views';
+
