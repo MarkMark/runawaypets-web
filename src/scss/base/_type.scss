@@ -1,0 +1,33 @@
+
+
+.bold,
+b { font-weight: $font-bold; }
+
+.light { font-weight: $font-thin; }
+
+
+.italic,
+i { font-style: italic; }
+
+.cap {
+  text-transform: capitalize;
+}
+
+.first-cap {
+  &:first-letter { text-transform: uppercase; }
+}
+
+
+.link,
+a {
+  color: $colour-blue-400;
+  display: inline-block;
+  outline: none;
+
+  &.tdn { text-decoration: none; }
+
+  &.clear {
+    color: $colour-black-text;
+    text-decoration: none;
+  }
+}

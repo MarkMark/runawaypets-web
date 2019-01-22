@@ -1,0 +1,23 @@
+
+
+html {
+  background: $colour-grey-50;
+  color: $colour-black-text;
+  font-family: $font-main;
+  font-size: 62.5%;
+  font-style: normal;
+  line-height: $line-height;
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+body {
+  @include font-size($font-size-primary);
+  line-height: $line-height;
+}
+
+
+
+// main {}
+

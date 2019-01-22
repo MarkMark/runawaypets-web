@@ -1,0 +1,58 @@
+h1,
+.alpha {
+  @include font-size($font-size-h1);
+}
+
+
+h2,
+.beta {
+  @include font-size($font-size-h2);
+}
+
+
+h3,
+.gamma {
+  @include font-size($font-size-h3);
+}
+
+
+h4,
+.delta {
+  @include font-size($font-size-h4);
+}
+
+
+h5,
+.sub-heading,
+.epsilon {
+  @include font-size($font-size-h5);
+}
+
+
+h6,
+.micro-sub-heading,
+.zeta {
+  @include font-size($font-size-h6);
+  color: $colour-black-secondary-text;
+}
+
+
+
+// Extra classes for huge headings
+%giga,
+.giga {
+  @include font-size($font-size-giga);
+}
+
+
+%mega,
+.mega {
+  @include font-size($font-size-mega);
+}
+
+
+%kilo,
+.kilo {
+  @include font-size($font-size-kilo);
+}
+

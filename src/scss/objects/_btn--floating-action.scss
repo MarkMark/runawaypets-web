@@ -1,0 +1,53 @@
+
+
+.btn--fa {
+  // @include border-radius(100%);
+  // @include box-shadow(0, 2px, 4px, -1px, $colour-black-secondary-text);
+  @include font-size($font-size-icon-secondary);
+  background: $colour-grey-500;
+  border: 0;
+  color: $colour-white-icons;
+  display: inline-block;
+  outline: none;
+  overflow: hidden;
+  padding: $spacing-secondary;
+  text-align: center;
+  text-decoration: none;
+
+  // ------------------------------------------------ //
+
+  &--bottom-sheet {
+    // background: $colour-green-1000;
+    position: absolute;
+    right: $spacing-secondary;
+    top: -$spacing-quaternary;
+  }
+
+
+  &--c {
+    &--accent {
+      // background:  $colour-light-blue-a700;
+    }
+  }
+
+  // ------------------------------------------------ //
+
+
+
+  &:active {
+    &:after { background: rgba(0, 0, 0, .12); }
+  }
+
+  &:after {
+    // @include transition(background, .5);
+    background: $colour-transparent;
+    bottom: 0;
+    content: '';
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+}
