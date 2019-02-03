@@ -1,9 +1,0 @@
-
-
-@mixin font-size($size: $font-size-primary) {
-  font-size: $size + rem;
-
-  .no-cssremunit & {
-    font-size: $size * 10 + px;
-  }
-}
