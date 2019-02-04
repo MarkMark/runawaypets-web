@@ -1,0 +1,21 @@
+///* ========================================================================
+//   #GLOBAL
+//   ======================================================================== */
+
+// The global settings file contains any project-wide variables; things that
+// need to be made available to the entire codebase.
+
+
+
+// Standardise some UI treatments.
+
+$global-radius: 3px !default;
+$global-transition: all 300ms ease-in-out !default;
+
+
+$global-font: 'Lato', sans-serif !default;
+$global-font-weight-bold: 700;
+$global-font-weight-normal: 400;
+$global-font-weight-light: 300;
+
+$global-white-text: #FFF;

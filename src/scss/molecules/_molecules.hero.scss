@@ -1,0 +1,28 @@
+
+
+.m-hero {
+  align-items: flex-end;
+  background: url('../Scenes/Landing/Images/hero/cat.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 32px 16px;
+  text-align: center;
+
+  &__content {
+    color: $global-white-text;
+
+    h1 {
+      font-weight: $global-font-weight-bold;
+      font-size: 4rem;
+    }
+
+    .tagline {
+      font-weight: $global-font-weight-light;
+      font-size: 2.5rem;
+    }
+  }
+}
