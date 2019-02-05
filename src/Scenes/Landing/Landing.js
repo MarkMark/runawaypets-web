@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import Hero from './Components/Hero';
 import Info from './Components/Info';
 import Rating from './Components/Rating';
+import Download from './Components/Download';
 
 import {ratings} from './Config/Ratings';
 
@@ -34,6 +35,7 @@ class Landing extends Component {
           </div>
         </section>
 
+        <Download />
       </section>
     );
   }
