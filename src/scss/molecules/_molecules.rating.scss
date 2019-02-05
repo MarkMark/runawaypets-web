@@ -1,0 +1,13 @@
+
+.m-rating {
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: $spacing-secondary;
+  text-align: center;
+
+  &__by {
+    font-size: 1rem;
+  }
+}

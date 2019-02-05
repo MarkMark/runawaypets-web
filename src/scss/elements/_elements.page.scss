@@ -17,8 +17,14 @@
 html {
   font-size: 62.5%;
   font-family: $global-font;
-  font-weight: $global-font-weight-normal;
+  font-weight: $global-font-weight-light;
   line-height: $inuit-global-line-height / $inuit-global-font-size; /* [1] */
   overflow-y: scroll; /* [2] */
   min-height: 100%; /* [3] */
+  color: $global-black-text;
+}
+
+
+body {
+  font-size: 1.6rem;
 }
