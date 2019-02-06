@@ -1,0 +1,29 @@
+
+[class^="a-icon-"], [class*=" a-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  display: inline-block;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.a-icon-star-full:before {
+  content: "\e9d9";
+}
+.a-icon-facebook2:before {
+  content: "\ea91";
+}
+.a-icon-instagram:before {
+  content: "\ea92";
+}
+.a-icon-twitter:before {
+  content: "\ea96";
+}

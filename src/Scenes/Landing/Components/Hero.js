@@ -14,7 +14,7 @@ export default function Hero(params) {
           Here to help reunite owners with their lost pets
         </p>
 
-        <div>
+        <div className="u-margin-bottom-small">
           <a
             href="https://itunes.apple.com/au/app/runaway-pets/id1148260739"
             title="Download Runaway Pets iOS App"
@@ -41,6 +41,27 @@ export default function Hero(params) {
               alt="Google play store logo"
             />
           </a>
+        </div>
+
+        <div>
+          <a
+            href="https://www.facebook.com/runawaypets/"
+            className="a-icon-facebook2"
+            target="_blank"
+            rel="noopener noreferrer"
+          />
+          <a
+            href="https://www.instagram.com/runawaypets"
+            className="a-icon-instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+          />
+          <a
+            href="https://twitter.com/runawaypets"
+            className="a-icon-twitter"
+            target="_blank"
+            rel="noopener noreferrer"
+          />
         </div>
       </div>
     </section>

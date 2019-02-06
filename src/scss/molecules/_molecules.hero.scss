@@ -24,5 +24,17 @@
       font-weight: $global-font-weight-light;
       font-size: 2.5rem;
     }
+
+    [class^="a-icon-"],
+    [class*=" a-icon-"] {
+      padding: $spacing-primary;
+      text-decoration: none;
+      color: $global-white-text;
+      transition: color .2s linear;
+
+      &:hover {
+        color: rgba($global-white-text, .8);
+      }
+    }
   }
 }
