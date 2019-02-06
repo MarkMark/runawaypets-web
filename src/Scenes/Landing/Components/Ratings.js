@@ -7,7 +7,7 @@ export default function RatingSection() {
     <section className="u-color--white u-colorsBg--blue--light">
       <div className="o-wrapper u-padding-vertical-large">
         <div className="o-layout">
-          <div className="col">
+          <div className="o-col">
             <h1>What people are saying</h1>
 
             <div className="s-ratings">

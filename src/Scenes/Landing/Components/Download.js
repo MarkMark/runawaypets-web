@@ -11,13 +11,13 @@ export default function Download(params) {
   return (
     <section className="o-wrapper u-padding-vertical-large">
       <div className="o-layout">
-        <div className="col">
+        <div className="o-col">
           <h1>Get the app</h1>
         </div>
       </div>
 
       <div className="o-layout o-layout--center">
-        <div className="col">
+        <div className="o-col">
           <a
             href="https://itunes.apple.com/au/app/runaway-pets/id1148260739"
             title="Download Runaway Pets iOS App"
@@ -46,7 +46,7 @@ export default function Download(params) {
           </a>
         </div>
 
-        <div className="col">
+        <div className="o-col">
           <Img
             src={Details}
             fallback={DetailsFallback}
