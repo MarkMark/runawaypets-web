@@ -1,4 +1,5 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom';
 
 export default function Footer () {
   return (
@@ -6,13 +7,13 @@ export default function Footer () {
       <nav>
         <ul>
           <li>
-            <a href="/test" title="test">Home</a>
+            <NavLink to="/" title="Homepage">Home</NavLink>
           </li>
           <li>
-            <a href="/test" title="test">Terms</a>
+            <NavLink to="/terms" title="Terms">Terms</NavLink>
           </li>
           <li>
-            <a href="/test" title="test">Privacy</a>
+            <NavLink to="/privacy" title="Privacy">Privacy</NavLink>
           </li>
         </ul>
         <p className="a-copy">© {new Date ().getFullYear ()} - Runaway pets</p>
