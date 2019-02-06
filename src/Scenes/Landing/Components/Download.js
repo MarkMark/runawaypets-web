@@ -1,7 +1,11 @@
 import React from 'react'
 import AppStore from '../Images/badges/appstore.webp'
+import AppStoreFallback from '../Images/badges/appstore.png'
 import PlayStore from '../Images/badges/google-play-badge.webp'
+import PlayStoreFallback from '../Images/badges/google-play-badge.png'
 import Details from '../Images/views/details.webp'
+import DetailsFallback from '../Images/views/details.webp'
+import Img from '../../../Components/Images/Img'
 
 export default function Download(params) {
   return (
@@ -21,7 +25,11 @@ export default function Download(params) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={AppStore} alt="Apple app store logo" />
+            <Img
+              src={AppStore}
+              fallback={AppStoreFallback}
+              alt="Apple app store logo"
+            />
           </a>
           <a
             href="https://play.google.com/store/apps/details?id=co.runawaypets.runawaypets"
@@ -30,12 +38,20 @@ export default function Download(params) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={PlayStore} alt="Google play store logo" />
+            <Img
+              src={PlayStore}
+              fallback={PlayStoreFallback}
+              alt="Google play store logo"
+            />
           </a>
         </div>
 
         <div className="col">
-          <img src={Details} alt="Runaway pets app details scene" />
+          <Img
+            src={Details}
+            fallback={DetailsFallback}
+            alt="Runaway pets app details scene"
+          />
         </div>
       </div>
     </section>

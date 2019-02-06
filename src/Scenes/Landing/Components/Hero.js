@@ -1,6 +1,9 @@
 import React from 'react'
 import AppStore from '../Images/badges/appstore.webp'
+import AppStoreFallback from '../Images/badges/appstore.png'
 import PlayStore from '../Images/badges/google-play-badge.webp'
+import PlayStoreFallback from '../Images/badges/google-play-badge.png'
+import Img from '../../../Components/Images/Img'
 
 export default function Hero(params) {
   return (
@@ -19,7 +22,11 @@ export default function Hero(params) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={AppStore} alt="Apple app store logo" />
+            <Img
+              src={AppStore}
+              fallback={AppStoreFallback}
+              alt="Apple app store logo"
+            />
           </a>
           <a
             href="https://play.google.com/store/apps/details?id=co.runawaypets.runawaypets"
@@ -28,7 +35,11 @@ export default function Hero(params) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={PlayStore} alt="Google play store logo" />
+            <Img
+              src={PlayStore}
+              fallback={PlayStoreFallback}
+              alt="Google play store logo"
+            />
           </a>
         </div>
       </div>
