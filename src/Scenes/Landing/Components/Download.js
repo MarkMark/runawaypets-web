@@ -1,12 +1,11 @@
-import React from 'react';
-import AppStore from '../Images/badges/appstore.webp';
-import PlayStore from '../Images/badges/google-play-badge.webp';
-import Details from '../Images/views/details.webp';
+import React from 'react'
+import AppStore from '../Images/badges/appstore.webp'
+import PlayStore from '../Images/badges/google-play-badge.webp'
+import Details from '../Images/views/details.webp'
 
-export default function Download (params) {
+export default function Download(params) {
   return (
     <section className="o-wrapper">
-
       <h1>Get the app</h1>
 
       <div>
@@ -33,7 +32,6 @@ export default function Download (params) {
       <div>
         <img src={Details} alt="Runaway pets app details scene" />
       </div>
-
     </section>
-  );
+  )
 }

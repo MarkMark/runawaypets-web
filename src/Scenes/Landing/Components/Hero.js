@@ -1,11 +1,10 @@
-import React from 'react';
-import AppStore from '../Images/badges/appstore.webp';
-import PlayStore from '../Images/badges/google-play-badge.webp';
+import React from 'react'
+import AppStore from '../Images/badges/appstore.webp'
+import PlayStore from '../Images/badges/google-play-badge.webp'
 
-export default function Hero (params) {
+export default function Hero(params) {
   return (
     <section className="m-hero">
-
       <div className="m-hero__content">
         <h1>Runaway pets</h1>
         <p className="tagline">
@@ -34,5 +33,5 @@ export default function Hero (params) {
         </div>
       </div>
     </section>
-  );
+  )
 }

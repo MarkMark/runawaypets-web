@@ -1,19 +1,19 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react'
 
-import Hero from './Components/Hero';
-import Info from './Components/Info';
-import Rating from './Components/Rating';
-import Download from './Components/Download';
+import Hero from './Components/Hero'
+import Info from './Components/Info'
+import Rating from './Components/Rating'
+import Download from './Components/Download'
 
-import {ratings} from './Config/Ratings';
+import { ratings } from './Config/Ratings'
 
 class Landing extends Component {
-  constructor (props) {
-    super (props);
-    this.state = {};
+  constructor(props) {
+    super(props)
+    this.state = {}
   }
 
-  render () {
+  render() {
     return (
       <section>
         <Hero />
@@ -24,7 +24,7 @@ class Landing extends Component {
           <h1>What people are saying</h1>
 
           <div className="s-ratings">
-            {ratings.map ((object, i) => (
+            {ratings.map((object, i) => (
               <Rating
                 key={i}
                 stars={object.stars}
@@ -37,8 +37,8 @@ class Landing extends Component {
 
         <Download />
       </section>
-    );
+    )
   }
 }
 
-export default Landing;
+export default Landing

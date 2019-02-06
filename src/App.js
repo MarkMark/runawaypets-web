@@ -1,10 +1,10 @@
-import React, {Component} from 'react';
-import {Switch, Route} from 'react-router-dom';
-import Landing from './Scenes/Landing/Landing';
-import Footer from './Components/Footer/Footer';
+import React, { Component } from 'react'
+import { Switch, Route } from 'react-router-dom'
+import Landing from './Scenes/Landing/Landing'
+import Footer from './Components/Footer/Footer'
 
 class App extends Component {
-  render () {
+  render() {
     return (
       <main>
         <Switch>
@@ -13,8 +13,8 @@ class App extends Component {
 
         <Footer />
       </main>
-    );
+    )
   }
 }
 
-export default App;
+export default App
