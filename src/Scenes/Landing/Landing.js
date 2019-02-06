@@ -21,17 +21,21 @@ class Landing extends Component {
         <Info />
 
         <section className="o-wrapper">
-          <h1>What people are saying</h1>
+          <div className="o-layout">
+            <div className="col">
+              <h1>What people are saying</h1>
 
-          <div className="s-ratings">
-            {ratings.map((object, i) => (
-              <Rating
-                key={i}
-                stars={object.stars}
-                desc={object.desc}
-                person={object.person}
-              />
-            ))}
+              <div className="s-ratings">
+                {ratings.map((object, i) => (
+                  <Rating
+                    key={i}
+                    stars={object.stars}
+                    desc={object.desc}
+                    person={object.person}
+                  />
+                ))}
+              </div>
+            </div>
           </div>
         </section>
 
