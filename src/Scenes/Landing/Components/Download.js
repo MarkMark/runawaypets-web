@@ -5,11 +5,15 @@ import Details from '../Images/views/details.webp'
 
 export default function Download(params) {
   return (
-    <section className="o-wrapper">
+    <section className="o-wrapper u-padding-vertical-large">
       <div className="o-layout">
         <div className="col">
           <h1>Get the app</h1>
+        </div>
+      </div>
 
+      <div className="o-layout o-layout--center">
+        <div className="col">
           <a
             href="https://itunes.apple.com/au/app/runaway-pets/id1148260739"
             title="Download Runaway Pets iOS App"

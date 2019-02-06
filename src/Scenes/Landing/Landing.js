@@ -20,20 +20,22 @@ class Landing extends Component {
 
         <Info />
 
-        <section className="o-wrapper">
-          <div className="o-layout">
-            <div className="col">
-              <h1>What people are saying</h1>
+        <section className="u-color--white u-colorsBg--blue--light">
+          <div className="o-wrapper u-padding-vertical-large">
+            <div className="o-layout">
+              <div className="col">
+                <h1>What people are saying</h1>
 
-              <div className="s-ratings">
-                {ratings.map((object, i) => (
-                  <Rating
-                    key={i}
-                    stars={object.stars}
-                    desc={object.desc}
-                    person={object.person}
-                  />
-                ))}
+                <div className="s-ratings">
+                  {ratings.map((object, i) => (
+                    <Rating
+                      key={i}
+                      stars={object.stars}
+                      desc={object.desc}
+                      person={object.person}
+                    />
+                  ))}
+                </div>
               </div>
             </div>
           </div>

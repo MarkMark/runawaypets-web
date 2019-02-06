@@ -1,0 +1,18 @@
+
+.u-color {
+  &--white {
+    color: $global-white-text;
+  }
+}
+
+.u-colorsBg {
+  &--blue {
+    background: $color-primary;
+  };
+  &--blue--light {
+    background: $color-primary-light;
+  };
+  &--blue--dark {
+    background: $color-primary-dark;
+  };
+}

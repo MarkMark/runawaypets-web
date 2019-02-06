@@ -1,7 +1,7 @@
 export const ratings = [
   {
     stars: 5,
-    desc: 'Great App Invaluable service, easy to use and looks great too.',
+    desc: 'Great app, invaluable service, easy to use and looks great too.',
     person: 'Theresa Schwanethal via the play store'
   },
   {

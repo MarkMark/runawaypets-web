@@ -2,4 +2,8 @@
 
 .o-layout {
   display: flex;
+
+  &--center {
+    align-items: center;
+  }
 }

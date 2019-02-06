@@ -14,13 +14,21 @@ $global-transition: all 300ms ease-in-out !default;
 
 
 $global-font: 'Lato', sans-serif !default;
-$global-font-weight-bold: 700;
-$global-font-weight-normal: 400;
-$global-font-weight-light: 300;
+$global-font-weight-bold: 700 !default;
+$global-font-weight-normal: 400 !default;
+$global-font-weight-light: 300 !default;
 
-$global-white-text: #FFF;
-$global-black-text: rgba(0, 0, 0, .87);
+$global-white-text: #FFF !default;
+$global-black-text: rgba(0, 0, 0, .87) !default;
+
+$color-primary: #2962ff !default;
+$color-primary-light: #0664ED !default;
+$color-primary-dark: #0039cb !default;
+
+$color-secondary: #E91D63 !default;
+$color-secondary-light: #FF6190 !default;
+$color-secondary-dark: #B0003A !default;
 
 
-$spacing-primary: 16px;
-$spacing-secondary: $spacing-primary / 2;
+$spacing-primary: 16px !default;
+$spacing-secondary: $spacing-primary / 2 !default;

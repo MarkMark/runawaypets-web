@@ -1,0 +1,39 @@
+
+$inuit-font-size-h1:  3.6px !default;
+$inuit-font-size-h2:  2.8px !default;
+$inuit-font-size-h3:  2.4px !default;
+$inuit-font-size-h4:  2.0px !default;
+$inuit-font-size-h5:  1.8px !default;
+$inuit-font-size-h6:  1.6px !default;
+
+$font-size-h1:  3.6rem !default;
+$font-size-h2:  2.8rem !default;
+$font-size-h3:  2.4rem !default;
+$font-size-h4:  2.0rem !default;
+$font-size-h5:  1.8rem !default;
+$font-size-h6:  1.6rem !default;
+
+h1 {
+  font-size: $font-size-h1;
+  font-weight: $global-font-weight-light;
+}
+
+h2 {
+  font-size: $font-size-h2;
+}
+
+h3 {
+  font-size: $font-size-h3;
+}
+
+h4 {
+  font-size: $font-size-h4;
+}
+
+h5 {
+  font-size: $font-size-h5;
+}
+
+h6 {
+  font-size: $font-size-h6;
+}

@@ -3,9 +3,9 @@ import Views from '../Images/views/progress.png'
 
 export default function Info() {
   return (
-    <section className="o-wrapper">
+    <section className="o-wrapper u-padding-top-large">
       <div className="o-layout">
-        <div className="col">
+        <div className="col u-padding-bottom-none">
           <h1>Easy as one, two, three</h1>
 
           <p>
@@ -15,7 +15,9 @@ export default function Info() {
             all users in your area. best of all, its free!
           </p>
 
-          <img src={Views} alt="Runaway pets views" />
+          <div className="u-alignText--center">
+            <img src={Views} alt="Runaway pets views" />
+          </div>
         </div>
       </div>
     </section>
