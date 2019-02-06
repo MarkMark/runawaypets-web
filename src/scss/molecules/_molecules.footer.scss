@@ -1,0 +1,23 @@
+
+.m-footer {
+  background: #212121;
+  display: flex;
+  justify-content: flex-end;
+  padding: $spacing-primary;
+
+  ul {
+    margin: 0;
+    list-style: none;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    color: $global-white-text;
+    display: inline-block;
+    padding: $spacing-secondary $spacing-primary;
+    text-decoration: none;
+  }
+}

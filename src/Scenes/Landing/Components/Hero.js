@@ -8,7 +8,9 @@ export default function Hero (params) {
 
       <div className="m-hero__content">
         <h1>Runaway pets</h1>
-        <p className="tagline">Here to help reunite owners their lost pets</p>
+        <p className="tagline">
+          Here to help reunite owners with their lost pets
+        </p>
 
         <div>
           <a
