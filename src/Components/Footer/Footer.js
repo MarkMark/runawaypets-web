@@ -12,12 +12,12 @@ export default function Footer() {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/terms" title="Terms">
+            <NavLink to="/legal/terms" title="Terms page">
               Terms
             </NavLink>
           </li>
           <li>
-            <NavLink to="/privacy" title="Privacy">
+            <NavLink to="/legal/privacy" title="Privacy page">
               Privacy
             </NavLink>
           </li>
