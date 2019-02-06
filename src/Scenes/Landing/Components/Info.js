@@ -1,5 +1,6 @@
 import React from 'react'
 import Views from '../Images/views/progress.png'
+import Img from '../../../Components/Images/Img'
 
 export default function Info() {
   return (
@@ -16,7 +17,7 @@ export default function Info() {
           </p>
 
           <div className="u-alignText--center">
-            <img src={Views} alt="Runaway pets views" />
+            <Img src={Views} alt={'Runaway pets views'} />
           </div>
         </div>
       </div>
