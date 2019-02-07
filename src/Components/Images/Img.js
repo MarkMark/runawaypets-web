@@ -5,7 +5,7 @@ export default function Img({ src, fallback, classes, alt }) {
   return (
     <img
       src={src}
-      class={classes}
+      className={classes}
       alt={alt}
       ref={img => (IMG = img)}
       onError={() => (IMG.src = fallback)}

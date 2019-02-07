@@ -1,6 +1,6 @@
 import React from 'react'
-import Views from '../Images/views/progress.webp'
-import ViewsFallback from '../Images/views/progress.png'
+import AppScenes from '../Images/views/appScenes.webp'
+import AppScenesFallback from '../Images/views/appScenes.png'
 import Img from '../../../Components/Images/Img'
 
 export default function Info() {
@@ -19,9 +19,9 @@ export default function Info() {
 
           <div className="u-alignText--center">
             <Img
-              src={Views}
-              fallback={ViewsFallback}
-              alt={'Runaway pets views'}
+              src={AppScenes}
+              fallback={AppScenesFallback}
+              alt={'Runaway pets scenes'}
             />
           </div>
         </div>
