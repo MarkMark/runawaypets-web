@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import { Router } from 'react-router-dom'
 import history from './Services/Config/History'
 import './scss/runaway.main.scss'
+import './Services/Config/Modernizr'
 import App from './App'
 import * as serviceWorker from './serviceWorker'
 

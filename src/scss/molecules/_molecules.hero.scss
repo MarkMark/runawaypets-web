@@ -2,8 +2,7 @@
 
 .m-hero {
   align-items: flex-end;
-  background: url('../Scenes/Landing/Images/hero/cat.jpg');
-  background: url('../Scenes/Landing/Images/hero/cat.webp');
+  background-image: url('../Scenes/Landing/Images/hero/cat.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -12,6 +11,10 @@
   min-height: 100vh;
   padding: 32px 16px;
   text-align: center;
+
+  .no-webp & {
+    background-image: url('../Scenes/Landing/Images/hero/cat.jpg');
+  }
 
   &__content {
     color: $global-white-text;
