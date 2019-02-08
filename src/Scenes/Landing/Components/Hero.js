@@ -49,19 +49,31 @@ export default function Hero(params) {
             className="a-icon-facebook2"
             target="_blank"
             rel="noopener noreferrer"
-          />
+          >
+            <span className="u-hidden-visually">
+              Link to Runaway pets facebook page
+            </span>
+          </a>
           <a
             href="https://www.instagram.com/runawaypets"
             className="a-icon-instagram"
             target="_blank"
             rel="noopener noreferrer"
-          />
+          >
+            <span className="u-hidden-visually">
+              Link to Runaway pets instagram page
+            </span>
+          </a>
           <a
             href="https://twitter.com/runawaypets"
             className="a-icon-twitter"
             target="_blank"
             rel="noopener noreferrer"
-          />
+          >
+            <span className="u-hidden-visually">
+              Link to Runaway pets twitter page
+            </span>
+          </a>
         </div>
       </div>
     </section>

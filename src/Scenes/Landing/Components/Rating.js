@@ -3,7 +3,7 @@ import React from 'react'
 export default function Rating({ stars, desc, person }) {
   return (
     <div className="m-rating">
-      <div>
+      <div className="m-rating__stars">
         <div>
           <i className="a-icon-star-full" />
           <i className="a-icon-star-full" />
