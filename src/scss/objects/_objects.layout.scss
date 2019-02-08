@@ -3,6 +3,16 @@
 .o-layout {
   display: flex;
 
+  &--column {
+    flex-direction: column;
+
+    &--mobileOnly {
+      @include mq($until: tablet) {
+        flex-direction: column;
+      }
+    }
+  }
+
   &--center {
     align-items: center;
   }

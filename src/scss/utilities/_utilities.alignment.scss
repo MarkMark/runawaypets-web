@@ -2,5 +2,11 @@
 .u-alignText {
   &--center {
     text-align: center;
+
+    &--mobileOnly {
+      @include mq($until: tablet) {
+        text-align: center;
+      }
+    }
   }
 }

@@ -14,7 +14,7 @@ export default function Hero(params) {
           Here to help reunite owners with their lost pets
         </p>
 
-        <div className="u-margin-bottom-small">
+        <div>
           <a
             href="https://itunes.apple.com/au/app/runaway-pets/id1148260739"
             title="Download Runaway Pets iOS App"

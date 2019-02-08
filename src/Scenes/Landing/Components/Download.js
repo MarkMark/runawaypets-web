@@ -16,8 +16,8 @@ export default function Download(params) {
         </div>
       </div>
 
-      <div className="o-layout o-layout--center">
-        <div className="o-col">
+      <div className="o-layout o-layout--center o-layout--column--mobileOnly">
+        <div className="o-col u-alignText--center--mobileOnly">
           <a
             href="https://itunes.apple.com/au/app/runaway-pets/id1148260739"
             title="Download Runaway Pets iOS App"
