@@ -4,7 +4,7 @@ import AppStoreFallback from '../Images/badges/appstore.png'
 import PlayStore from '../Images/badges/google-play-badge.webp'
 import PlayStoreFallback from '../Images/badges/google-play-badge.png'
 import ListHalf from '../Images/views/listHalf.webp'
-import ListHalfFallback from '../Images/views/listHalf.webp'
+import ListHalfFallback from '../Images/views/listHalf.png'
 import Img from '../../../Components/Images/Img'
 
 export default function Download(params) {
